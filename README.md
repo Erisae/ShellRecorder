@@ -2,6 +2,7 @@
 tool that records a series of shell commands and save them in usable format
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub issues](https://img.shields.io/github/issues/Erisae/ShellRecorder)
 
 ## Overview
 Developers have to write shell commands frequently but have few tools to orgnize "cleaned shell in-output". 
