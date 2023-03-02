@@ -2,7 +2,7 @@ CC = g++
 
 CFLAGS  = -g -Wall
 
-TARGET = test
+TARGET = shell-recorder
 
 all: $(TARGET)
 

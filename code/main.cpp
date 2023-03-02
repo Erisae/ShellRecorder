@@ -3,6 +3,7 @@
 #include <iostream>
 #include <algorithm>
 #include <fstream>
+#include <cstdio>
 
 
 class InputParser{
@@ -35,31 +36,60 @@ int launchRecord(std::string filename)
 {
     std::string cmd;
     std::ofstream outfile;
+    filename +=  ".sh";
     outfile.open(filename);
 	while(1)
 	{
 		std::getline(std::cin, cmd);
 
         // exit with "quit" command
-		if(cmd.compare("quit") == 0)
+		if(cmd.compare("exit") == 0)
 			break;	
         system(cmd.data());
         outfile << cmd.data() << std::endl;
     }
     outfile.close();
+    std::string chmod_cmd = "chmod +x " + filename;
+    system(chmod_cmd.data());
 
     return 0;
 }
 
 
-int launchScript(std::string filenaame)
+int launchScript(std::string filename)
 {
+    std::string scriptCmd;
+    scriptCmd = "script -r -timing=time_log " + filename;
+    system(scriptCmd.data());
+    return 0;
+}
+
+int launchScriptReplay(std::string filename)
+{
+    std::string replayCmd;
+    replayCmd = "script -p " + filename;
+    system(replayCmd.data());
     return 0;
 }
 
 
-int lauchPythonLibrary(std::string filename)
+int lauchPythonLibrary()
 {
+    std::string pyreqCmd, checkExistCmd;
+    std::ofstream outfile;
+    checkExistCmd = "pip show pipreqs > hate.txt 2> warning.txt";
+    system(checkExistCmd.data());
+    outfile.open("warning.txt");
+    if (outfile.eof())
+    {
+        std::string installCmd = "pip install pipreqs";
+        system(installCmd.data());
+    }
+    remove("warning.txt");
+    remove("hate.txt");
+    pyreqCmd = "pipreqs --force .";
+    system(pyreqCmd.data());
+
     return 0;
 }
 
@@ -76,6 +106,11 @@ int main(int argc, char* argv[])
         launchScript(filename);
     }
 
+    if(input.cmdOptionExists("-e"))
+    {
+        launchScriptReplay(filename);
+    }
+
     if(input.cmdOptionExists("-r"))
     {
         launchRecord(filename);
@@ -83,7 +118,7 @@ int main(int argc, char* argv[])
 
     if(input.cmdOptionExists("-p"))
     {
-        lauchPythonLibrary(filename);
+        lauchPythonLibrary();
     }
 
     return 0;
