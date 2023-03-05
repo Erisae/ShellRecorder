@@ -1,10 +1,10 @@
-Start testing: Mar 05 03:03 EST
+Start testing: Mar 05 04:16 EST
 ----------------------------------------------------------
 1/8 Testing: InputParserTest.GetCmdOptionDefault
 1/8 Test: InputParserTest.GetCmdOptionDefault
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/input_parser_test" "--gtest_filter=InputParserTest.GetCmdOptionDefault" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"InputParserTest.GetCmdOptionDefault" start time: Mar 05 03:03 EST
+"InputParserTest.GetCmdOptionDefault" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -20,10 +20,10 @@ Note: Google Test filter = InputParserTest.GetCmdOptionDefault
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.05 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"InputParserTest.GetCmdOptionDefault" end time: Mar 05 03:03 EST
+"InputParserTest.GetCmdOptionDefault" end time: Mar 05 04:16 EST
 "InputParserTest.GetCmdOptionDefault" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/8 Test: InputParserTest.GetCmdOptionInput
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/input_parser_test" "--gtest_filter=InputParserTest.GetCmdOptionInput" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"InputParserTest.GetCmdOptionInput" start time: Mar 05 03:03 EST
+"InputParserTest.GetCmdOptionInput" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -50,7 +50,7 @@ Note: Google Test filter = InputParserTest.GetCmdOptionInput
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"InputParserTest.GetCmdOptionInput" end time: Mar 05 03:03 EST
+"InputParserTest.GetCmdOptionInput" end time: Mar 05 04:16 EST
 "InputParserTest.GetCmdOptionInput" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/8 Test: InputParserTest.OptionExists
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/input_parser_test" "--gtest_filter=InputParserTest.OptionExists" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"InputParserTest.OptionExists" start time: Mar 05 03:03 EST
+"InputParserTest.OptionExists" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -77,7 +77,7 @@ Note: Google Test filter = InputParserTest.OptionExists
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"InputParserTest.OptionExists" end time: Mar 05 03:03 EST
+"InputParserTest.OptionExists" end time: Mar 05 04:16 EST
 "InputParserTest.OptionExists" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/8 Test: InputParserTest.OptionNotExists
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/input_parser_test" "--gtest_filter=InputParserTest.OptionNotExists" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"InputParserTest.OptionNotExists" start time: Mar 05 03:03 EST
+"InputParserTest.OptionNotExists" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -104,7 +104,7 @@ Note: Google Test filter = InputParserTest.OptionNotExists
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"InputParserTest.OptionNotExists" end time: Mar 05 03:03 EST
+"InputParserTest.OptionNotExists" end time: Mar 05 04:16 EST
 "InputParserTest.OptionNotExists" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -112,7 +112,7 @@ Test Passed.
 5/8 Test: LaunchRecordTest.Input
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/launch_record_test" "--gtest_filter=LaunchRecordTest.Input" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"LaunchRecordTest.Input" start time: Mar 05 03:03 EST
+"LaunchRecordTest.Input" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -121,36 +121,17 @@ Note: Google Test filter = LaunchRecordTest.Input
 [----------] Global test environment set-up.
 [----------] 1 test from LaunchRecordTest
 [ RUN      ] LaunchRecordTest.Input
-CMakeCache.txt
-CMakeFiles
-CTestTestfile.cmake
-Makefile
-Testing
-_deps
-bin
-cmake_install.cmake
-input_parser_test
-input_parser_test[1]_include.cmake
-input_parser_test[1]_tests.cmake
-integration_test
-integration_test[1]_include.cmake
-integration_test[1]_tests.cmake
-launch_record_test
-launch_record_test[1]_include.cmake
-launch_record_test[1]_tests.cmake
-lib
-record_output.sh
-[       OK ] LaunchRecordTest.Input (6 ms)
-[----------] 1 test from LaunchRecordTest (6 ms total)
+[       OK ] LaunchRecordTest.Input (0 ms)
+[----------] 1 test from LaunchRecordTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (6 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.04 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"LaunchRecordTest.Input" end time: Mar 05 03:03 EST
+"LaunchRecordTest.Input" end time: Mar 05 04:16 EST
 "LaunchRecordTest.Input" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -158,7 +139,7 @@ Test Passed.
 6/8 Test: LaunchRecordTest.Content
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/launch_record_test" "--gtest_filter=LaunchRecordTest.Content" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"LaunchRecordTest.Content" start time: Mar 05 03:03 EST
+"LaunchRecordTest.Content" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -177,7 +158,7 @@ Note: Google Test filter = LaunchRecordTest.Content
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"LaunchRecordTest.Content" end time: Mar 05 03:03 EST
+"LaunchRecordTest.Content" end time: Mar 05 04:16 EST
 "LaunchRecordTest.Content" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -185,7 +166,7 @@ Test Passed.
 7/8 Test: LaunchRecordTest.Permission
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/launch_record_test" "--gtest_filter=LaunchRecordTest.Permission" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"LaunchRecordTest.Permission" start time: Mar 05 03:03 EST
+"LaunchRecordTest.Permission" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -204,7 +185,7 @@ Note: Google Test filter = LaunchRecordTest.Permission
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"LaunchRecordTest.Permission" end time: Mar 05 03:03 EST
+"LaunchRecordTest.Permission" end time: Mar 05 04:16 EST
 "LaunchRecordTest.Permission" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -212,7 +193,7 @@ Test Passed.
 8/8 Test: IntegrationTest.all
 Command: "/Users/arika/Desktop/ShellRecorder/code/build/integration_test" "--gtest_filter=IntegrationTest.all" "--gtest_also_run_disabled_tests"
 Directory: /Users/arika/Desktop/ShellRecorder/code/build
-"IntegrationTest.all" start time: Mar 05 03:03 EST
+"IntegrationTest.all" start time: Mar 05 04:16 EST
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -221,38 +202,18 @@ Note: Google Test filter = IntegrationTest.all
 [----------] Global test environment set-up.
 [----------] 1 test from IntegrationTest
 [ RUN      ] IntegrationTest.all
-CMakeCache.txt
-CMakeFiles
-CTestTestfile.cmake
-Makefile
-Testing
-_deps
-bin
-cmake_install.cmake
-input_parser_test
-input_parser_test[1]_include.cmake
-input_parser_test[1]_tests.cmake
-inte_test.sh
-integration_test
-integration_test[1]_include.cmake
-integration_test[1]_tests.cmake
-launch_record_test
-launch_record_test[1]_include.cmake
-launch_record_test[1]_tests.cmake
-lib
-record_output.sh
-[       OK ] IntegrationTest.all (3 ms)
-[----------] 1 test from IntegrationTest (3 ms total)
+[       OK ] IntegrationTest.all (0 ms)
+[----------] 1 test from IntegrationTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (3 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"IntegrationTest.all" end time: Mar 05 03:03 EST
+"IntegrationTest.all" end time: Mar 05 04:16 EST
 "IntegrationTest.all" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 05 03:03 EST
+End testing: Mar 05 04:16 EST
