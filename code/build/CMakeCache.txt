@@ -197,7 +197,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=shell-recorder
+CMAKE_PROJECT_NAME:STATIC=code
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.13.0
@@ -305,6 +305,15 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
+code_BINARY_DIR:STATIC=/Users/arika/Desktop/ShellRecorder/code/build
+
+//Value Computed by CMake
+code_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+code_SOURCE_DIR:STATIC=/Users/arika/Desktop/ShellRecorder/code
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/Users/arika/Desktop/ShellRecorder/code/build/_deps/googletest-build/googlemock
 
 //Value Computed by CMake
@@ -358,15 +367,6 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
-
-//Value Computed by CMake
-shell-recorder_BINARY_DIR:STATIC=/Users/arika/Desktop/ShellRecorder/code/build
-
-//Value Computed by CMake
-shell-recorder_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-shell-recorder_SOURCE_DIR:STATIC=/Users/arika/Desktop/ShellRecorder/code
 
 
 ########################

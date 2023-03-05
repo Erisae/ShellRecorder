@@ -1,11 +1,11 @@
-#include "../headers/launch_replay.h"
+// #include "../headers/launch_replay.h"
 
-#include <string>
+// #include <string>
 
-int launchScriptReplay(std::string filename)
-{
-    std::string replayCmd;
-    replayCmd = "script -p " + filename;
-    system(replayCmd.data());
-    return 0;
-}
+// int launchScriptReplay(std::string filename)
+// {
+//     std::string replayCmd;
+//     replayCmd = "script -p " + filename;
+//     system(replayCmd.data());
+//     return 0;
+// }

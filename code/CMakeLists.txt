@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(shell-recorder)
+project(code)
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 14)
@@ -16,13 +16,28 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(
-  launch_parser_unitest
-  ./test/launch_parser_unitest.cpp
+  input_parser_test
+  ./tests/input_parser_test.cpp
+  ./methods/input_parser.cpp 
+  ./headers/input_parser.h
 )
+add_executable(
+  launch_record_test
+  ./tests/launch_record_test.cpp 
+  ./methods/launch_record.cpp 
+  ./headers/launch_record.h
+)
+
 target_link_libraries(
-  launch_parser_unitest
+  input_parser_test
+  GTest::gtest_main
+)
+
+target_link_libraries(
+  launch_record_test
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(launch_parser_unitest)
+gtest_discover_tests(input_parser_test)
+gtest_discover_tests(launch_record_test)
