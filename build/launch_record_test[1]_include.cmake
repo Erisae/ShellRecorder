@@ -1,0 +1,5 @@
+if(EXISTS "/Users/arika/Desktop/ShellRecorder/build/launch_record_test[1]_tests.cmake")
+  include("/Users/arika/Desktop/ShellRecorder/build/launch_record_test[1]_tests.cmake")
+else()
+  add_test(launch_record_test_NOT_BUILT launch_record_test_NOT_BUILT)
+endif()

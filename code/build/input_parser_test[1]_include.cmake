@@ -1,5 +1,0 @@
-if(EXISTS "/Users/arika/Desktop/ShellRecorder/code/build/input_parser_test[1]_tests.cmake")
-  include("/Users/arika/Desktop/ShellRecorder/code/build/input_parser_test[1]_tests.cmake")
-else()
-  add_test(input_parser_test_NOT_BUILT input_parser_test_NOT_BUILT)
-endif()

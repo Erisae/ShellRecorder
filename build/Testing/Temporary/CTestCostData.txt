@@ -1,0 +1,9 @@
+InputParserTest.GetCmdOptionDefault 1 0.00324604
+InputParserTest.GetCmdOptionInput 1 0.0030205
+InputParserTest.OptionExists 1 0.00299696
+InputParserTest.OptionNotExists 1 0.00297392
+LaunchRecordTest.Input 1 0.00339796
+LaunchRecordTest.Content 1 0.00284942
+LaunchRecordTest.Permission 1 0.0063005
+IntegrationTest.all 1 0.00311392
+---

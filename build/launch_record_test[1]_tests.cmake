@@ -1,0 +1,7 @@
+add_test([=[LaunchRecordTest.Input]=]  /Users/arika/Desktop/ShellRecorder/build/launch_record_test [==[--gtest_filter=LaunchRecordTest.Input]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LaunchRecordTest.Input]=]  PROPERTIES WORKING_DIRECTORY /Users/arika/Desktop/ShellRecorder/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[LaunchRecordTest.Content]=]  /Users/arika/Desktop/ShellRecorder/build/launch_record_test [==[--gtest_filter=LaunchRecordTest.Content]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LaunchRecordTest.Content]=]  PROPERTIES WORKING_DIRECTORY /Users/arika/Desktop/ShellRecorder/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[LaunchRecordTest.Permission]=]  /Users/arika/Desktop/ShellRecorder/build/launch_record_test [==[--gtest_filter=LaunchRecordTest.Permission]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LaunchRecordTest.Permission]=]  PROPERTIES WORKING_DIRECTORY /Users/arika/Desktop/ShellRecorder/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  launch_record_test_TESTS LaunchRecordTest.Input LaunchRecordTest.Content LaunchRecordTest.Permission)

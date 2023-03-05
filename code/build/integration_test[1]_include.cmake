@@ -1,5 +1,0 @@
-if(EXISTS "/Users/arika/Desktop/ShellRecorder/code/build/integration_test[1]_tests.cmake")
-  include("/Users/arika/Desktop/ShellRecorder/code/build/integration_test[1]_tests.cmake")
-else()
-  add_test(integration_test_NOT_BUILT integration_test_NOT_BUILT)
-endif()
