@@ -3,6 +3,7 @@ project(code)
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS --coverage)
 
 include(FetchContent)
 FetchContent_Declare(
@@ -28,6 +29,15 @@ add_executable(
   ./headers/launch_record.h
 )
 
+add_executable(
+  integration_test
+  ./tests/integration_test.cpp
+  ./methods/launch_record.cpp 
+  ./headers/launch_record.h
+  ./methods/input_parser.cpp 
+  ./headers/input_parser.h
+)
+
 target_link_libraries(
   input_parser_test
   GTest::gtest_main
@@ -38,6 +48,12 @@ target_link_libraries(
   GTest::gtest_main
 )
 
+target_link_libraries(
+  integration_test
+  GTest::gtest_main
+)
+
 include(GoogleTest)
 gtest_discover_tests(input_parser_test)
 gtest_discover_tests(launch_record_test)
+gtest_discover_tests(integration_test)

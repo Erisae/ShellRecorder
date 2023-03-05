@@ -1,5 +1,6 @@
 /Users/arika/Desktop/ShellRecorder/code/build/CMakeFiles/input_parser_test.dir
 /Users/arika/Desktop/ShellRecorder/code/build/CMakeFiles/launch_record_test.dir
+/Users/arika/Desktop/ShellRecorder/code/build/CMakeFiles/integration_test.dir
 /Users/arika/Desktop/ShellRecorder/code/build/CMakeFiles/test.dir
 /Users/arika/Desktop/ShellRecorder/code/build/CMakeFiles/edit_cache.dir
 /Users/arika/Desktop/ShellRecorder/code/build/CMakeFiles/rebuild_cache.dir

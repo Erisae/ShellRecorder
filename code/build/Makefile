@@ -198,6 +198,19 @@ launch_record_test/fast:
 .PHONY : launch_record_test/fast
 
 #=============================================================================
+# Target rules for targets named integration_test
+
+# Build rule for target.
+integration_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 integration_test
+.PHONY : integration_test
+
+# fast build rule for target.
+integration_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/build
+.PHONY : integration_test/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -255,6 +268,7 @@ methods/input_parser.o: methods/input_parser.cpp.o
 # target to build an object file
 methods/input_parser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/input_parser_test.dir/build.make CMakeFiles/input_parser_test.dir/methods/input_parser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/methods/input_parser.cpp.o
 .PHONY : methods/input_parser.cpp.o
 
 methods/input_parser.i: methods/input_parser.cpp.i
@@ -263,6 +277,7 @@ methods/input_parser.i: methods/input_parser.cpp.i
 # target to preprocess a source file
 methods/input_parser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/input_parser_test.dir/build.make CMakeFiles/input_parser_test.dir/methods/input_parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/methods/input_parser.cpp.i
 .PHONY : methods/input_parser.cpp.i
 
 methods/input_parser.s: methods/input_parser.cpp.s
@@ -271,6 +286,7 @@ methods/input_parser.s: methods/input_parser.cpp.s
 # target to generate assembly for a file
 methods/input_parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/input_parser_test.dir/build.make CMakeFiles/input_parser_test.dir/methods/input_parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/methods/input_parser.cpp.s
 .PHONY : methods/input_parser.cpp.s
 
 methods/launch_record.o: methods/launch_record.cpp.o
@@ -279,6 +295,7 @@ methods/launch_record.o: methods/launch_record.cpp.o
 # target to build an object file
 methods/launch_record.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/launch_record_test.dir/build.make CMakeFiles/launch_record_test.dir/methods/launch_record.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/methods/launch_record.cpp.o
 .PHONY : methods/launch_record.cpp.o
 
 methods/launch_record.i: methods/launch_record.cpp.i
@@ -287,6 +304,7 @@ methods/launch_record.i: methods/launch_record.cpp.i
 # target to preprocess a source file
 methods/launch_record.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/launch_record_test.dir/build.make CMakeFiles/launch_record_test.dir/methods/launch_record.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/methods/launch_record.cpp.i
 .PHONY : methods/launch_record.cpp.i
 
 methods/launch_record.s: methods/launch_record.cpp.s
@@ -295,6 +313,7 @@ methods/launch_record.s: methods/launch_record.cpp.s
 # target to generate assembly for a file
 methods/launch_record.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/launch_record_test.dir/build.make CMakeFiles/launch_record_test.dir/methods/launch_record.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/methods/launch_record.cpp.s
 .PHONY : methods/launch_record.cpp.s
 
 tests/input_parser_test.o: tests/input_parser_test.cpp.o
@@ -320,6 +339,30 @@ tests/input_parser_test.s: tests/input_parser_test.cpp.s
 tests/input_parser_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/input_parser_test.dir/build.make CMakeFiles/input_parser_test.dir/tests/input_parser_test.cpp.s
 .PHONY : tests/input_parser_test.cpp.s
+
+tests/integration_test.o: tests/integration_test.cpp.o
+.PHONY : tests/integration_test.o
+
+# target to build an object file
+tests/integration_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/tests/integration_test.cpp.o
+.PHONY : tests/integration_test.cpp.o
+
+tests/integration_test.i: tests/integration_test.cpp.i
+.PHONY : tests/integration_test.i
+
+# target to preprocess a source file
+tests/integration_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/tests/integration_test.cpp.i
+.PHONY : tests/integration_test.cpp.i
+
+tests/integration_test.s: tests/integration_test.cpp.s
+.PHONY : tests/integration_test.s
+
+# target to generate assembly for a file
+tests/integration_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/integration_test.dir/build.make CMakeFiles/integration_test.dir/tests/integration_test.cpp.s
+.PHONY : tests/integration_test.cpp.s
 
 tests/launch_record_test.o: tests/launch_record_test.cpp.o
 .PHONY : tests/launch_record_test.o
@@ -363,6 +406,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... input_parser_test"
+	@echo "... integration_test"
 	@echo "... launch_record_test"
 	@echo "... methods/input_parser.o"
 	@echo "... methods/input_parser.i"
@@ -373,6 +417,9 @@ help:
 	@echo "... tests/input_parser_test.o"
 	@echo "... tests/input_parser_test.i"
 	@echo "... tests/input_parser_test.s"
+	@echo "... tests/integration_test.o"
+	@echo "... tests/integration_test.i"
+	@echo "... tests/integration_test.s"
 	@echo "... tests/launch_record_test.o"
 	@echo "... tests/launch_record_test.i"
 	@echo "... tests/launch_record_test.s"
